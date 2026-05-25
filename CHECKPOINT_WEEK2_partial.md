@@ -29,3 +29,4 @@ cd C:\Users\DELL\playwright-ai-qa
 claude
 ```
 Khi vào Claude Code, nói đại loại: *"Tiếp Tuần 2 — dịch file `playwright-site.spec.ts` ra Test Case Manual giống cách hôm 2026-05-24."*
+## Test sync 25/05/2026 từ máy CTY (hattm)
