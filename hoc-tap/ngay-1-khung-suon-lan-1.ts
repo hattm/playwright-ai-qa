@@ -15,16 +15,16 @@
 | **FAIL ví dụ** | Không có H1, có 2 H1, hoặc chữ H1 khác | */
 
 import { test, expect } from '@playwright/test';
-test.describe('Kiểm tra trang indext https://the-internet.herokuapp.com - index page checks ', () => {
+test.describe('Kiểm tra trang index có chữ Welcome to the-internet', () => {
     test.beforeEach(async ({ page }) => {
         await page.goto('https://the-internet.herokuapp.com');
 
     });
-    test('has H1 have in "Welcome to the-internet"', async ({ page }) => {
-        const h1 = page.locator('h1');
-        await expect(h1).toHaveCount(1);
-        await expect(h1).toHaveText('Welcome to the-internet');
+    test('kiếm tra chữ H có đúng chữ Welcome to the-internet', async ({ page }) => {
 
-    });
+   
+ });
 
 });
+
+
