@@ -30,3 +30,18 @@
 //   const cb2 = page.getByRole('checkbox').nth(1);
 //   ... check / uncheck ...
 //   ... expect ...
+import { test, expect } from '@playwright/test';
+test.describe('Kiểm tra trang Checkboxes', () => {
+    test.beforeEach(async ({ page }) => {
+        await page.goto('https://the-internet.herokuapp.com/checkboxes');
+    });
+    test('Tích và bỏ tích checkbox', async ({ page }) => {
+        const cb1 = page.getByRole('checkbox').nth(0);
+        const cb2 = page.getByRole('checkbox').nth(1);
+        await cb1.check();
+        await cb2.uncheck();
+        await expect(cb1).toBeChecked();
+        await expect(cb2).not.toBeChecked();
+    });
+
+});
