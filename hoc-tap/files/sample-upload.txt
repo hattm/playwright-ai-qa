@@ -1,0 +1,2 @@
+Day la file mau dung de tap upload trong bai TC-TI-012.
+Noi dung gi cung duoc - chi can co file ton tai de Playwright dinh kem.
