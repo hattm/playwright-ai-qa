@@ -76,4 +76,4 @@ test.describe('Kiểm tra trang File Upload', () => {
         await expect(page.getByRole('heading', { name: 'File Uploaded!' })).toBeVisible();
         await expect(page.locator('#uploaded-files')).toContainText('sample-upload.txt');
     });
-});
+});// đã xong ngày 12
